@@ -1,0 +1,260 @@
+<!doctype html> 
+<html> 
+<head> 
+<title> Hotels </title> 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+*{margin:0;} /*to remove the auto margin from the page- not compulsory though*/ 
+
+header { background-color: lightblue; width:100%; height:100px;  text-align:center  } 
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float:left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float:left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float:none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+footer {
+background-color:lightgray; 
+width:100%;
+height:80px;  
+font-size:20px;
+text-align:center; 
+
+}
+
+
+.wrapper {
+padding:50px; 
+text-align:center; 
+background-color:white; 
+}
+
+
+nav ul li{
+list-style-type:none;
+display:inline-block; 
+}
+
+
+
+nav ul li{
+text-decoration:underline; 
+color:white; 
+margin:10px; 
+}
+
+
+.styled-table{
+border-collapse:collapse;
+width:100%; 
+background-color:#f5f5f5
+font-family: Arial, sans-serif;        
+}
+
+
+.styled-table thead{
+background-color: ;
+}
+
+
+.styled-table tbody{
+background:lightcyan;
+}
+
+
+. styled-table tfoot{
+background:lightblue;
+}
+
+
+.styled-table thead th{
+background-color: #333; 
+padding:10px;                   
+color: #fff; 
+}
+
+
+.styled-table tbody td{
+padding:10px;                  
+}
+
+
+
+
+.styled-table tfoot tr td{
+
+padding: 10px;
+
+background;
+
+text-align:center;
+
+font-weight:bold;
+
+border-bottom: 2px black solid;
+
+}
+
+.styled-table tbody tr:nth-child(even) {
+background-color:#ADD8E6; 
+}
+
+
+.table-class tbody tr:hover {
+background-color:red;
+}
+
+</style> 
+</head> 
+
+
+<body>
+
+<header> 
+
+<nav>
+
+<h1> Stockholm </h1> 
+<div class="navbar">
+  <a href="index.html">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Places 
+      <i class="fa fa-caret-down"></i>
+    </button>
+   
+    <div class="dropdown-content">
+      <a href="touristplaces.html">Tourist Places </a>
+      <a href="hotels.html">Hotels</a>
+     <a href="restaurants.html">Restaurants</a>
+    </div>
+  </div> 
+ <a href="contactus.html">contact us</a>
+</div>
+ 
+</nav>
+
+</header> 
+
+
+<main> 
+<table class="styled-table"> 
+<thead> 
+<tr> 
+<th>Hotel</th>
+<th>Price (Swedish Krones) </th>
+<th>Facilities</th>
+</tr> 
+</thead> 
+
+
+<tbody> 
+<tr> 
+<td class="table-class tbody tr:hover"><img src="hotel1.jpg" width=500 height=300 > <h3>Comfort Hotel </h3></td>  
+<td> From 572kr</td>
+<td> Free wifi, Spa, Conference Halls </td> 
+</tr> 
+
+
+<tr> 
+<td><img src="hotel5.jpg" width=500 height=300 > <h3>Diplomat Hotel </h3></td>  
+<td> From 3330kr</td>
+<td> Restaurant, Meeting & Even halls,  </td> 
+</tr>
+
+
+<tr> 
+<td><img src="hotel3.jpg" width=500 height=300 > <h3>Raddisson Blu </h3></td>  
+<td> From 1125kr</td>
+<td> Free wifi, Indoor Pool, Pet Friendly, Breakfast Buffet</td> 
+</tr>
+
+<tr> 
+<td><img src="hotel4.jpg" width=500 height=300 > <h3>Quality Hotel</h3></td>  
+<td> From 572kr</td>
+<td> Free wifi, Spa, Conference Hall, Restaurant</td> 
+</tr>
+
+</tbody> 
+
+
+</tfoot> 
+<tfoot> <tr><td colspan="3" bgcolor="lightyellow"> Have a happy stay in Stockholm </td></tr></tfoot> 
+</table> 
+
+</main> 
+
+ 
+<footer> 
+<p><br>This website is made with the help of various websites :) </p> 
+<a href= "https://start.stockholm/en/"> To know more about Stockholm (click here) </a> 
+</footer> 
+
+
+
+</body> 
+</html> 
+
+
+
+
